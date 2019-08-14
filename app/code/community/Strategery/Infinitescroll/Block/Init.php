@@ -11,7 +11,7 @@
  * @category   Strategery
  * @package    Strategery_Infinitescroll
  * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
- * @copyright  Copyright (c) 2011 Strategery Inc. (http://usestrategery.com)
+ * @copyright  Copyright (c) 2014 Strategery Inc. (http://usestrategery.com)
  *
  * @author Enrique Piatti
  */ 
@@ -21,7 +21,7 @@ class Strategery_Infinitescroll_Block_Init extends Mage_Core_Block_Template
 	public function getConfigData()
 	{
 		$helper = Mage::helper('infinitescroll');
-		$cache = Mage::getSingleton('core/cache');
+		$cache = Mage::app()->getCache();
 		$configData = $cache->load("infinitescroll_configData");
 		if ( ! $configData) {
 			$configData = $helper->getConfigData('selectors/content');
@@ -50,7 +50,8 @@ class Strategery_Infinitescroll_Block_Init extends Mage_Core_Block_Template
 	public function getProductListMode()
 	{
 		// user mode
-		if ($currentMode = $this->getRequest()->getParam('mode')) {
+        $currentMode = $this->getRequest()->getParam('mode') ? $this->getRequest()->getParam('mode') : Mage::getSingleton('catalog/session')->getDisplayMode();
+        if ($currentMode) {
 			switch($currentMode){
 				case 'grid':
 					$productListMode = 'grid';
@@ -72,7 +73,7 @@ class Strategery_Infinitescroll_Block_Init extends Mage_Core_Block_Template
 					$productListMode = 'list';
 					break;
 				default:
-					$productListMode = 'grid';
+					$productListMode = $defaultMode;
 			}
 		}
 
