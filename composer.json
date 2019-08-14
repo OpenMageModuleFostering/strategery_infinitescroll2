@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Strategery_InfiniteScroll2",
+    "type": "magento-module",
+    "license": "Academic-Free-License-(AFL-3.0)",
+    "homepage": "",
+    "description": "Automatically load the next page of products by AJAX after the end of the list.",
+    "authors": [
+    {
+        "name": "Damian Alberto Pastorini",
+        "email": "damian.pastorini@usestrategery.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

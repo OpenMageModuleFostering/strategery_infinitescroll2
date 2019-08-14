@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package>
+    <name>Strategery_InfiniteScroll2</name>
+    <version>2.1.8</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/afl-3.0.php">Academic Free License (AFL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Automatically load the next page of products by AJAX after the end of the list.</summary>
+    <description>Description:&#xD;
+This extension is for when the user reaches the end of the current product list, the next page is loaded automatically by AJAX after the end of the list.&#xD;
+Easy to install and configure, this module works 100% out of the box with Magento&amp;apos;s default theme, and also gives to you the posibility to configurate the custom selectors of your custom theme.&#xD;
+Now you can get a more friendly UI by helping the user to save clicks and time.&#xD;
+&#xD;
+Demo:&#xD;
+http://demo.usestrategery.com/infinite-scroll&#xD;
+Admin:&#xD;
+http://demo.usestrategery.com/infinite-scroll/admin&#xD;
+User: demo&#xD;
+Password: demo1234&#xD;
+&#xD;
+Installation:&#xD;
+Download from Magento Connect.&#xD;
+Configure the selectos for your theme on System / Configuration seccion.&#xD;
+Refresh your Magento cache.&#xD;
+Scroll to infinity and beyond!&#xD;
+&#xD;
+Configuration:&#xD;
+If you have a different theme other than the default, you will need to copy the default theme files to your custom theme folder and configure the plugin by going to System / Configuration / Catalog / Infinite Scroll.&#xD;
+NOTE: If you have another JS module that adds some custom behavior to the product list, remember to use our callback function to add that behavior to the products loaded by InfiniteScroll.</description>
+    <notes>Automatic load next page of current product list.&#xD;
+Support for Magento 1.3 up to 1.7.2.&#xD;
+Fixed Observer.php</notes>
+    <authors><author><name>Damian Alberto Pastorini</name><user>strategery</user><email>damian.pastorini@usestrategery.com</email></author><author><name>Miguel Balparda</name><user>strategery</user><email>miguel.balparda@usestrategery.om</email></author></authors>
+    <date>2013-03-15</date>
+    <time>12:17:27</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Strategery_Infinitescroll2.xml" hash="8724cb82b6d47b9996610029e302e5d4"/></dir></target><target name="magecommunity"><dir name="Strategery"><dir name="Infinitescroll2"><dir name="Block"><file name="Config.php" hash="427f0bd42480db0b93e04711c9f1c8fe"/><file name="Flush.php" hash="335bf80fc852b77d96e20aceb7ec97fe"/></dir><dir name="Helper"><file name="Data.php" hash="05de0d81682ca71b7d34e82e1ba2be60"/></dir><dir name="Model"><dir name="Catalog"><file name="Observer.php" hash="4c2a1a0910ed1b2ac0d79c603d54b336"/></dir></dir><dir name="controllers"><file name="CacheController.php" hash="8d15ceda1ccd223f22c34d85f9714684"/><file name="JsController.php" hash="3d97abe7a35b69bb70e6bb3ab1414f47"/></dir><dir name="etc"><file name="config.xml" hash="2ea61b70b0426aec58d39f58839ca56f"/><file name="system.xml" hash="6c0034e3648fc34d730642876f376161"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="strategery-infinitescroll2.xml" hash="f8c0447f74f31b576d9e9cee89c99b8f"/></dir><dir name="template"><dir name="strategery"><dir name="infinitescroll2"><file name="js.phtml" hash="85f7a4b3265da1693c03ff97ac17094e"/><file name="toolbar.phtml" hash="d16882d540e2c23501f84a64e33c67e2"/></dir></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="jquery"><dir name="infinitescroll2"><dir name="behaviors"><file name="infinitescroll-magento.js" hash="88a5a092c68911819302952e2128fe34"/></dir><file name="https.js" hash="be476c35fecb93b0a88625d8bc8a128b"/><file name="jquery.infinitescroll.js" hash="862b580a996c3f7a9daa1fcc1fae808d"/><file name="jquery.infinitescroll.min.js" hash="24131ba057a50077af7a97dfa1fcde30"/></dir><file name="jquery.latest.min.js" hash="7ffe78e450bedfa8878241c3abc5edba"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
