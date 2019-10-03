@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Strategery_InfiniteScroll2",
+    "name": "OpenMageModuleFostering\/Strategery_InfiniteScroll2",
     "type": "magento-module",
     "license": "Academic-Free-License-(AFL-3.0)",
     "homepage": "",
     "description": "Automatically load the next page of products by AJAX after the end of the list.",
     "authors": [
-    {
-        "name": "Strategery",
-        "email": "contact@usestrategery.com"
-    }
-],
+        {
+            "name": "Strategery",
+            "email": "contact@usestrategery.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
